@@ -352,9 +352,9 @@ def send_sync(
 async def email_callback(msg: Message):
     pass 
     success = await send_email_msg(
-        sender_email="1036605129@qq.com",  # 你的QQ邮箱
-        sender_password="djdbuyqvsiyebcif",       # 这里填授权码，不是登录密码！
-        receiver_emails=["chenyuezi1031@gmail.com"],  # 这里要填一个有效的收件人邮箱
+        sender_email="",  # 你的QQ邮箱
+        sender_password="",       # 这里填授权码，不是登录密码！
+        receiver_emails=[""],  # 这里要填一个有效的收件人邮箱
         subject="测试邮件 - QQ邮箱",
         msg=msg.content,
         smtp_server="smtp.qq.com",
